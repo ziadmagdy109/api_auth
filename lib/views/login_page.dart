@@ -1,6 +1,7 @@
 import 'package:api/data/service/auth_service.dart';
 import 'package:api/views/my_home_page.dart';
 import 'package:flutter/material.dart';
+
 import 'register_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -87,7 +88,6 @@ class _LoginPageState extends State<LoginPage> {
                                 );
                                 return;
                               }
-
                               _login();
                             },
 
