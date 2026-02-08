@@ -2,6 +2,8 @@ import 'package:api/data/service/auth_service.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
+
   @override
   State<RegisterPage> createState() => _RegisterPageState();
 }
@@ -34,7 +36,7 @@ class _RegisterPageState extends State<RegisterPage> {
       ScaffoldMessenger.of(
         context,
       ).showSnackBar(SnackBar(content: Text('Registration successful!')));
-      
+
       Navigator.pop(context); // ارجع للصفحة السابقة (مثلاً Login)
     } else {
       ScaffoldMessenger.of(
